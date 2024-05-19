@@ -49,7 +49,7 @@ app.post("/api/chatgpt", (req, res) => {
     main();
 })
 app.get('/',(req,res)=>{
-    res.sendFile('./index.html')
+    res.send('welcome in home')
     
     
     
