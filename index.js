@@ -22,6 +22,12 @@ app.use(express.json())
 
 ///openAi
 
+app.get('/',(req,res)=>{
+    res.send('welcome in home')
+    
+    
+    
+})
 const genAI = new GoogleGenerativeAI(process.env.API);
 
 // For text-only input, use the gemini-pro model
@@ -47,12 +53,6 @@ app.post("/api/chatgpt", (req, res) => {
     }
 
     main();
-})
-app.get('/',(req,res)=>{
-    res.send('welcome in home')
-    
-    
-    
 })
 
 
